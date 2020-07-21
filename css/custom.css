@@ -1,0 +1,89 @@
+.btn-outline-inverse.active:not(:disabled):not(.disabled), .btn-outline-inverse.focus:not(:disabled):not(.disabled), .btn-outline-inverse:active:not(:disabled):not(.disabled), .btn-outline-inverse:focus:not(:disabled):not(.disabled), .btn-outline-inverse:hover:not(:disabled):not(.disabled) {
+    background-color: #fc0 !important;
+    border-color: #fc0 !important;
+    color: #000;
+}
+
+.chevron-wrapper {display:none}
+.site-navbar .navbar-brand {font-size: 1.5rem;}
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; 
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+ #map {
+        height: 600px;
+        width: 100%;
+       }
+.yellowbox {
+    background-color: #ffc904;
+	padding: 15px;
+	border-radius: 0px;
+}
+.btn-outline-inverse {
+    color:black !important;
+    background-color:white !important;
+}
+.btn-outline-inverse :hover {
+    color:black !important;
+    background-color:#fc0 !important;
+}
+
+.site-navbar .navbar-brand {
+    font-size: 2rem !important;
+}
+
+
+.mobileShow { display: none; }
+.tabletShow { display:none }
+.desktopShow {display:inline }
+
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        .mobileShow {
+            display: inline;
+        }
+        .desktopShow {
+            display:none;
+        }
+  }
+
+  @media only screen
+    and (min-device-width : 992px)
+    and (max-device-width: 768px)  {
+        .tabletShow {
+            display:inline;
+        }
+        .desktopShow {
+            display:none;
+        }
+  }
+  @media only screen
+    and (min-device-width : 1024px)
+    and (max-device-width: 1366px)  {
+        .tabletShow {
+            display:inline;
+        }
+        .desktopShow {
+            display:none;
+        }
+  }
+  @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width: 1024px)  {
+        .tabletShow {
+            display:inline !important;
+        }
+        .desktopShow {
+            display:none;
+        }
+  }
